@@ -71,11 +71,11 @@ lazy val `akka-http-cors` = project
     Compile / packageBin / packageOptions += Package.ManifestAttributes(
       "Automatic-Module-Name" -> "ch.megard.akka.http.cors"
     ),
-    libraryDependencies += "com.typesafe.akka" %% "akka-http"   % akkaHttpVersion,
-    libraryDependencies += "com.typesafe.akka" %% "akka-stream" % akkaVersion % Provided,
-    libraryDependencies += "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion % Test,
-    libraryDependencies += "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion % Test,
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % Test
+    libraryDependencies += "com.typesafe.akka" %% "akka-http"           % akkaHttpVersion,
+    libraryDependencies += "com.typesafe.akka" %% "akka-stream"         % akkaVersion     % Provided,
+    libraryDependencies += "com.typesafe.akka" %% "akka-http-testkit"   % akkaHttpVersion % Test,
+    libraryDependencies += "com.typesafe.akka" %% "akka-stream-testkit" % akkaVersion     % Test,
+    libraryDependencies += "org.scalatest"     %% "scalatest"           % "3.2.20"        % Test
   )
 
 lazy val `akka-http-cors-example` = project
